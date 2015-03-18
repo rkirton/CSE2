@@ -30,10 +30,16 @@ public class waves{//public class always required
         System.out.println("Enter an int between 1 and 30: ");//Print the statement
         int mainNumber = myScanner.nextInt();//define "mainNumber" as the user input
         
+        if (mainNumber>=1 && mainNumber<=30){}//check for valid number
+        else{//if not valid
+            System.out.println("Ivalid int");//print the statement
+            return;//close the program
+        }
+        
         System.out.println("FOR LOOP");//Pinr the statement
         
         
-        for (int a=1; a<=mainNumber-1; a++){//initialize first for loop
+        for (int a=1; a<=mainNumber; a++){//initialize first for loop
             for (int b=a; b>0; b--){//create second for loop
                 for (int c=1; c<=b; c++){//create third for loop
 
