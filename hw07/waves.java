@@ -33,28 +33,28 @@ public class waves{//public class always required
         System.out.println("FOR LOOP");//Pinr the statement
         
         
-        for (int a=1; a<=mainNumber-1; a++){
-            for (int b=a; b>0; b--){
-                for (int c=1; c<=b; c++){
-                    
-                    System.out.print(a);
+        for (int a=1; a<=mainNumber-1; a++){//initialize first for loop
+            for (int b=a; b>0; b--){//create second for loop
+                for (int c=1; c<=b; c++){//create third for loop
+
+                    System.out.print(a);//print "a"
                     
                 }
                 
-                System.out.print("\n");
+                System.out.print("\n");//go to the next line after the previous loop finishes
                 
             }
             
-            a++;
+            a++;//add one to "a" after the previous loop completes
             
-                for (int x=1; x<=a; x++){
-                    for (int y=1; y<=x; y++){
+                for (int x=1; x<=a; x++){//create another loop 
+                    for (int y=1; y<=x; y++){//create one last loop
                         
-                        System.out.print(a);
+                        System.out.print(a);//print "a"
                         
                     }
                     
-                    System.out.print("\n");
+                    System.out.print("\n");//go to the next line after the previous loop
                     
                 }
                 
@@ -63,90 +63,90 @@ public class waves{//public class always required
         
         System.out.println("\nWHILE LOOP");//start a new line then print the statement
         
-        int a=1;
-        while (a<=mainNumber){
-            int b=a;
-            while (b>0){
+        int a=1;//initialize int a as equal to 1
+        while (a<=mainNumber){//create while loop
+            int b=a;//initialize int b=a
+            while (b>0){//start another while loop
                 
-                int c=1;
+                int c=1;//initialize c=1
                 
-                while (c<=b){
+                while (c<=b){//create another while loop
                     
-                    System.out.print(a);
+                    System.out.print(a);//print a
                     
-                    c++;
-                    
-                }
-                
-                System.out.print("\n");
-                b--;
-                
-            }
-            
-            a++;
-            
-            int x=1;
-            
-            while (x<=a){
-                int y=1;
-                
-                while (y<=x){
-                    
-                    System.out.print(a);
-                    y++;
+                    c++;//add one to c
                     
                 }
                 
-                System.out.print("\n");
-                
-                x++;
+                System.out.print("\n");//skip a line after the previous loop finishes
+                b--;//subtract one from b after the previous loop finishes
                 
             }
             
-            a++;
+            a++;//add one to a after the previous loop finishes
+            
+            int x=1;//initialize x=1
+            
+            while (x<=a){//create a while loop
+                int y=1;//initialize y=1
+                
+                while (y<=x){//create another while loop
+                    
+                    System.out.print(a);//print a
+                    y++;//add one to y after the previous loop finishes
+                    
+                }
+                
+                System.out.print("\n");//skip to the next liine after the previous loop finishes
+                
+                x++;//add one to x after the previous loop finishes
+                
+            }
+            
+            a++;//add one to a after the previous loop finishes
         }
         
         
         System.out.println("\nDO WHILE LOOP");//start a new line then print the statement
         
-        int A=1;
-        do{
-            int b=A;
-            do{
-                int c=1;
+        int A=1;//initialize int A=1
+        do{//start do while loop
+            int b=A;//initialize b+a
+            do{//start another do while loop
+                int c=1;//initialize c=1
                 
-                do{
-                    System.out.print(A);
-                    c++;
+                do{//start another do while loop
+                    System.out.print(A);//print A
+                    c++;//add one to c
                     
-                } while (c<=b);
+                } while (c<=b);//close do while loop
                 
-                System.out.print("\n");
-                b--;
+                System.out.print("\n");//skip to the next line after the previous loop finishes
+                b--;//subtract one from b after the previous loop finishes
                 
-            }while (b>0);
+            }while (b>0);//end do while loop
             
-            A++;
+            A++;//add one to A after the previous loop finishes
             
             
-            int x=1;
-            do{
-                int y=1;
-                do{
+            int x=1;//initialize int x
+            do{//start another do while loop
+                int y=1;//initialize int y
+                do{//start a do while loop
                     
-                    System.out.print(A);
-                    y++;
+                    System.out.print(A);//print A
+                    y++;//add one to y
                     
-                } while (y<=x);
+                } while (y<=x);//close do while loop
                 
-                System.out.print("\n");
+                System.out.print("\n");//go to the next line after the previous loop finishes
                 
-                x++;
-            }while (x<=A);
+                x++;//add one to x after the previous loop finishes
+            }while (x<=A);//close do while loop
             
-            A++;
+            A++;//add one to A after the previous loop finishes
             
-        } while (A<=mainNumber);
+        } while (A<=mainNumber);//close do while loop
         
         
         
