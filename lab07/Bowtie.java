@@ -10,9 +10,64 @@ public class Bowtie{
         
         Scanner myScanner = new Scanner(System.in);
         
-        int nStars = 9;
         
-        for(int i=0; i<nStars; i++){
+        System.out.println("Input your desired length:");//print statement
+        
+        
+        boolean badInput1 = true;
+        int goodA = 0;
+        //this while loop checks for good input
+        while(badInput1){
+            if(myScanner.hasNextInt()){
+                goodA = myScanner.nextInt();
+                if(goodA%2<1){
+                    System.out.println("Please enter an odd number.");
+                    myScanner.nextLine();
+                }
+                else if(goodA>33 || goodA<3){
+                    System.out.println("Please enter an int between 3 and 33.");
+                    myScanner.nextLine();
+                }
+                else{
+                    badInput1 = false;
+                    break;
+                    }
+            }
+            else{
+                System.out.println("Not an int.  Try again.");
+                myScanner.nextLine();
+            }
+        }
+        
+        int nStars = goodA;
+        
+        
+        for(int i=0;i<nStars-1;i++){
+            
+            for(int j=0;j<nStars-(2*i);j++){
+                
+                
+                System.out.print("*");
+                
+            }
+            System.out.println("");
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+/*        for(int i=0; i<nStars; i++){
             if(i<5){
                 for(int j=0; j<(nStars-(2*i)); j++){
                     System.out.print("*");
@@ -26,7 +81,7 @@ public class Bowtie{
         }
         
         System.out.println("");
-        
+*/        
         
         
     }
