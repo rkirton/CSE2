@@ -1,4 +1,4 @@
-/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////done
 //Ryan Kirton
 //lab06
 //TwistGenerator
@@ -7,17 +7,17 @@
 //out a pattern with the length of the user input.
 //
 
-import java.util.Scanner;
+import java.util.Scanner;//create scanner
 
-public class TwistGenerator{
-    public static void main(String[] args){
+public class TwistGenerator{//public class
+    public static void main(String[] args){//main method
         
-        Scanner myScanner = new Scanner (System.in);
+        Scanner myScanner = new Scanner (System.in);//name scanner
         
         System.out.println("Please enter a positive integer");
         boolean badInput = true;
         int length = 0;
-        
+        //chceck for bad input
         while(badInput){
             if(myScanner.hasNextInt()){
                 length = myScanner.nextInt();
@@ -42,19 +42,19 @@ public class TwistGenerator{
         int remainder = length - (setThrees*3);
         
         int threes = setThrees;
-        
+        //print first part
         while(threes>0){
             System.out.print("\\ /");
             threes--;
         }
-        
+        //print remainders
         if( remainder == 2 || remainder == 1 ){
             System.out.print("\\ ");
         }
         
         System.out.println(" ");
         threes = setThrees;
-        
+        //print second part
         while(threes>0){
             System.out.print(" X ");
             threes --;
@@ -62,12 +62,12 @@ public class TwistGenerator{
         
         System.out.println(" ");
         threes = setThrees;
-        
+        //print third part
         while(threes>0){
             System.out.print("\\ /");
             threes--;
         }
-        
+        //print remainders
         if( remainder == 2 || remainder == 1 ){
             System.out.print("\\ ");
         }
